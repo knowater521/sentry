@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Organization, SentryTransactionEvent} from 'app/types';
-import {TableData, TableDataRow} from 'app/views/eventsV2/table/types';
+import {Organization, SentryTransactionEvent} from 'sentry/types';
+import {TableData, TableDataRow} from 'sentry/views/eventsV2/table/types';
 
 import {SpanBoundsType, SpanGeneratedBoundsType, isGapSpan, getSpanID} from './utils';
 import {ProcessedSpanType, ParsedTraceType, TreeDepthType} from './types';

@@ -2,7 +2,7 @@ import max from 'lodash/max';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import theme from 'app/utils/theme';
+import theme from 'sentry/utils/theme';
 
 import BaseChart from './baseChart';
 import MapSeries from './series/mapSeries';
@@ -23,7 +23,7 @@ export default class WorldMapChart extends React.Component {
 
   async componentDidMount() {
     const countryToCodeMap = await import(
-      /* webpackChunkName: "countryCodesMap" */ 'app/data/countryCodesMap'
+      /* webpackChunkName: "countryCodesMap" */ 'sentry/data/countryCodesMap'
     );
 
     // eslint-disable-next-line

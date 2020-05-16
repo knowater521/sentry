@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {action} from '@storybook/addon-actions';
-import {withInfo} from '@storybook/addon-info';
+import { action } from '@storybook/addon-actions';
+import { withInfo } from '@storybook/addon-info';
 
-import {Form as LegacyForm, TextField as LegacyTextField} from 'app/components/forms';
+import { Form as LegacyForm, TextField as LegacyTextField } from 'sentry/components/forms';
 
 class UndoButton extends React.Component {
   handleClick(e) {

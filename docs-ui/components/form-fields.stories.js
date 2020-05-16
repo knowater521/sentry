@@ -1,21 +1,21 @@
 import React from 'react';
-import {action} from '@storybook/addon-actions';
-import {number, boolean} from '@storybook/addon-knobs';
-import {withInfo} from '@storybook/addon-info';
+import { action } from '@storybook/addon-actions';
+import { number, boolean } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
-import {Panel} from 'app/components/panels';
-import DatePickerField from 'app/views/settings/components/forms/datePickerField';
-import Form from 'app/views/settings/components/forms/form';
-import FormField from 'app/views/settings/components/forms/formField';
-import NewBooleanField from 'app/views/settings/components/forms/booleanField';
-import RadioField from 'app/views/settings/components/forms/radioField';
-import RadioGroup from 'app/views/settings/components/forms/controls/radioGroup';
-import RangeSlider from 'app/views/settings/components/forms/controls/rangeSlider';
-import SelectField from 'app/views/settings/components/forms/selectField';
-import Switch from 'app/components/switch';
-import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
-import TextField from 'app/views/settings/components/forms/textField';
-import TextareaField from 'app/views/settings/components/forms/textareaField';
+import { Panel } from 'sentry/components/panels';
+import DatePickerField from 'sentry/views/settings/components/forms/datePickerField';
+import Form from 'sentry/views/settings/components/forms/form';
+import FormField from 'sentry/views/settings/components/forms/formField';
+import NewBooleanField from 'sentry/views/settings/components/forms/booleanField';
+import RadioField from 'sentry/views/settings/components/forms/radioField';
+import RadioGroup from 'sentry/views/settings/components/forms/controls/radioGroup';
+import RangeSlider from 'sentry/views/settings/components/forms/controls/rangeSlider';
+import SelectField from 'sentry/views/settings/components/forms/selectField';
+import Switch from 'sentry/components/switch';
+import TextCopyInput from 'sentry/views/settings/components/forms/textCopyInput';
+import TextField from 'sentry/views/settings/components/forms/textField';
+import TextareaField from 'sentry/views/settings/components/forms/textareaField';
 
 export default {
   title: 'Forms/Fields',
@@ -26,7 +26,7 @@ export const _TextField = withInfo({
   propTablesExclude: [Form],
 })(() => (
   <Panel>
-    <Form initialData={{context: {location: 'cat'}}}>
+    <Form initialData={{ context: { location: 'cat' } }}>
       <TextField
         name="simpletextfieldvalue"
         label="Simple Text Field with Value"
@@ -84,7 +84,7 @@ export const _TextareaField = withInfo({
   propTablesExclude: [Form],
 })(() => (
   <Panel>
-    <Form initialData={{context: {location: 'cat'}}}>
+    <Form initialData={{ context: { location: 'cat' } }}>
       <TextareaField
         name="simpletextfieldvalue"
         label="Simple Textarea Field with Value"
@@ -242,7 +242,7 @@ export const NonInlineField = withInfo({
 })(() => (
   <Form>
     <FormField name="radio" label="Radio Field" inline={false}>
-      {({value, label, onChange}) => (
+      {({ value, label, onChange }) => (
         <RadioGroup
           onChange={onChange}
           label={label}
@@ -263,7 +263,7 @@ NonInlineField.story = {
 };
 
 export const _RangeSlider = withInfo('Range slider')(() => (
-  <div style={{backgroundColor: '#fff', padding: 20}}>
+  <div style={{ backgroundColor: '#fff', padding: 20 }}>
     <RangeSlider
       name="rangeField"
       min={1}

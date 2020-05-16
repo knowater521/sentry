@@ -2,15 +2,15 @@ import Papa from 'papaparse';
 import {Location, Query} from 'history';
 import {browserHistory} from 'react-router';
 
-import {tokenizeSearch, stringifyQueryObject} from 'app/utils/tokenizeSearch';
-import {t} from 'app/locale';
-import {Event, LightWeightOrganization, SelectValue} from 'app/types';
-import {getTitle} from 'app/utils/events';
-import {getUtcDateString} from 'app/utils/dates';
-import {URL_PARAM} from 'app/constants/globalSelectionHeader';
-import {disableMacros} from 'app/views/discover/result/utils';
-import {COL_WIDTH_UNDEFINED} from 'app/components/gridEditable';
-import EventView from 'app/utils/discover/eventView';
+import {tokenizeSearch, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
+import {t} from 'sentry/locale';
+import {Event, LightWeightOrganization, SelectValue} from 'sentry/types';
+import {getTitle} from 'sentry/utils/events';
+import {getUtcDateString} from 'sentry/utils/dates';
+import {URL_PARAM} from 'sentry/constants/globalSelectionHeader';
+import {disableMacros} from 'sentry/views/discover/result/utils';
+import {COL_WIDTH_UNDEFINED} from 'sentry/components/gridEditable';
+import EventView from 'sentry/utils/discover/eventView';
 import {
   Field,
   Column,
@@ -21,7 +21,7 @@ import {
   getAggregateAlias,
   TRACING_FIELDS,
   Aggregation,
-} from 'app/utils/discover/fields';
+} from 'sentry/utils/discover/fields';
 
 import {ALL_VIEWS, TRANSACTION_VIEWS} from './data';
 import {TableColumn, TableDataRow, FieldValue, FieldValueKind} from './table/types';

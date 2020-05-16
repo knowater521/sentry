@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {select, number} from '@storybook/addon-knobs';
-import {action} from '@storybook/addon-actions';
+import { select, number } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
-import NumberDragControl from 'app/components/numberDragControl';
+import NumberDragControl from 'sentry/components/numberDragControl';
 
 const onChange = action('onChange');
 
@@ -14,7 +14,7 @@ export default {
 export const _NumberDragControl = () => (
   <Container>
     <NumberDragControl
-      axis={select('Direction', {x: 'x', y: 'y'}, 'x')}
+      axis={select('Direction', { x: 'x', y: 'y' }, 'x')}
       step={number('Step')}
       shiftStep={number('Shift held step')}
       onChange={delta => onChange(delta)}
