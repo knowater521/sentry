@@ -10,7 +10,7 @@ jest.mock('sentry/views/performance/transactionSummary/utils', () => ({
 }));
 
 jest.mock('sentry/views/alerts/utils', () => {
-  const actual = jest.requireActual('app/views/alerts/utils');
+  const actual = jest.requireActual('sentry/views/alerts/utils');
   return {
     ...actual,
     getIncidentDiscoverUrl: jest.fn(),
