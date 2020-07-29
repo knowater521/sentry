@@ -1,6 +1,6 @@
 import React from 'react';
-import { withInfo } from '@storybook/addon-info';
-import { text } from '@storybook/addon-knobs';
+import {withInfo} from '@storybook/addon-info';
+import {text} from '@storybook/addon-knobs';
 
 import FileIcon from 'sentry/components/fileIcon';
 
