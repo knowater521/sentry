@@ -1,8 +1,8 @@
 import React from 'react';
-import { withInfo } from '@storybook/addon-info';
+import {withInfo} from '@storybook/addon-info';
 
-import { IconBusiness } from 'sentry/icons/iconBusiness';
-import { List, ListItem } from 'sentry/components/list';
+import {IconBusiness} from 'sentry/icons/iconBusiness';
+import {List, ListItem} from 'sentry/components/list';
 
 export default {
   title: 'UI/List',
