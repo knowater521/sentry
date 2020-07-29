@@ -5,11 +5,11 @@ import {PRESET_AGGREGATES} from 'sentry/views/settings/incidentRules/presets';
 import {getIncidentDiscoverUrl} from 'sentry/views/alerts/utils';
 import {transactionSummaryRouteWithQuery} from 'sentry/views/performance/transactionSummary/utils';
 
-jest.mock('app/views/performance/transactionSummary/utils', () => ({
+jest.mock('sentry/views/performance/transactionSummary/utils', () => ({
   transactionSummaryRouteWithQuery: jest.fn(),
 }));
 
-jest.mock('app/views/alerts/utils', () => {
+jest.mock('sentry/views/alerts/utils', () => {
   const actual = jest.requireActual('app/views/alerts/utils');
   return {
     ...actual,

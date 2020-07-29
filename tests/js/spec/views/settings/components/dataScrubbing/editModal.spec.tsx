@@ -27,7 +27,7 @@ const endpoint = `/projects/${organizationSlug}/${projectId}/`;
 // @ts-ignore
 const api = new MockApiClient();
 
-jest.mock('app/views/settings/components/dataScrubbing/submitRules');
+jest.mock('sentry/views/settings/components/dataScrubbing/submitRules');
 
 async function renderComponent() {
   const wrapper = mountWithTheme(<GlobalModal />);
