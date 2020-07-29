@@ -252,7 +252,7 @@ let appConfig = {
         },
       },
       {
-        test: /sentry\/icons\/.*\.svg$/,
+        test: /app\/icons\/.*\.svg$/,
         use: ['svg-sprite-loader', 'svgo-loader'],
       },
       {
@@ -266,7 +266,7 @@ let appConfig = {
       },
       {
         test: /\.(woff|woff2|ttf|eot|svg|png|gif|ico|jpg|mp4)($|\?)/,
-        exclude: /sentry\/icons\/.*\.svg$/,
+        exclude: /app\/icons\/.*\.svg$/,
         use: [
           {
             loader: 'file-loader',
